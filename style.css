@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Luckiestguy;
+    src: url(/Fonts/LuckiestGuy.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Fonts/Montserrat-Bold.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(/Fonts/Montserrat-Regular.ttf)
+}
+
+@keyframes colorchange {
+    25% {
+        color: white;
+    }
+    50% {
+        color: rgb(116, 168, 12);
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: blueviolet;
+    }
+}
+
+@keyframes namechange {
+    25% {
+        color: white;
+        text-shadow: 2px 0px 1px red;
+    }
+    50% {
+        color: rgb(116, 168, 12);
+        text-shadow: 2px 0px 1px lightskyblue;
+    }
+    75% {
+        color: yellow;
+        text-shadow: 2px 0px 1px darkred;
+    }
+    100% {
+        color: blueviolet;
+        text-shadow: 2px 0px 1px white;
+    }
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    /* height: 100%;
+    width: 1000px; */
+    background-image: linear-gradient(to bottom right, grey, black, rgb(4, 74, 114), black, grey);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(/IMAGES/10.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 55% 25%; */
+}
+
+caption {
+    font-size: 50px;
+    margin-top: 35px;
+    margin-left: 540px;
+    padding-top: 15px;
+    width: 400px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 0px red;
+    border-bottom-style: groove;
+    border-bottom-color: white;
+    border-top-style: groove;
+    border-top-color: white;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Luckiestguy;
+    box-shadow: 5px 5px 10px 1px white, -5px 5px 10px 1px white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+caption:hover {
+    color: red;
+    text-shadow: 2px 2px 0px white;
+}
+
+table {
+    table-layout: auto;
+    empty-cells: hide;
+    border-spacing: 0px;
+    color: white;
+    border: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+table:hover {
+    cursor: context-menu;
+}
+
+td {
+    padding: 5px;
+    height: 20px;
+    font-family: Montserrat-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td:hover {
+    color: rgb(184, 235, 83);
+}
+
+th {
+    color: rgb(144, 130, 235);
+    padding-top: 80px;
+    padding-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif, Montserrat;
+    /* transition-property: all;
+    transition-duration: 1s; */
+    animation-name: colorchange;
+    animation-duration: 6s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+th::first-letter {
+    font-size: 30px;
+}
+
+.days {
+    border: 0px;
+    color: lightgrey;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.days:hover {
+    color: cyan;
+}
+
+.holiday {
+    color: rgb(233, 19, 19);
+    font-weight: bolder;
+}
+
+.holiday:hover {
+    color: lightsalmon;
+}
+
+.hide {
+    color: rgba(211, 211, 211, 0.35);
+}
+
+.hide:hover {
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline:hover {
+    color: rgb(255, 152, 152);
+}
+
+#name {
+    font-size: 18px;
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 0px 1px white;
+    letter-spacing: 4px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    animation-name: namechange;
+    animation-duration: 3s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+#name::first-letter {
+    font-size: 30px;
+}
+
+::selection {
+    background-color: black;
+    color: chartreuse;
+}
